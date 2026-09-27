@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book an Appointment | 12 Monkeys Tattoos — Tracy, CA</title>
+  <meta name="description" content="Request a tattoo appointment at 12 Monkeys Tattoos in Tracy, CA. Pick your artist, tell us your idea, and we'll get back to you. Walk-ins welcome Tue–Sat.">
+  <link rel="canonical" href="https://www.12monkeystattoos.com/appointments">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Book an Appointment | 12 Monkeys Tattoos">
+  <meta property="og:description" content="Request a tattoo appointment at 12 Monkeys Tattoos in Tracy, CA.">
+  <meta property="og:image" content="https://www.12monkeystattoos.com/img/hero.webp">
+  <meta property="og:url" content="https://www.12monkeystattoos.com/appointments">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <img class="ghost ghost--monkey" src="img/bg-monkey.webp" alt="" aria-hidden="true">
+  <img class="ghost ghost--waves" src="img/bg-waves.webp" alt="" aria-hidden="true">
+
+  <header class="nav">
+    <div class="wrap nav__inner">
+      <a class="nav__logo" href="index.html"><img src="img/logo.webp" alt="12 Monkeys Tattoos home" width="150" height="62"></a>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="artists.html">Artists</a></li>
+        <li><a href="aftercare.html">Aftercare</a></li>
+        <li><a class="btn" href="appointments.html" aria-current="page">Book Now</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="section__head" style="padding-top: clamp(3rem, 7vw, 5rem);">
+      <p class="kicker">Let's Do This</p>
+      <h1 style="font-size: clamp(2rem, 5vw, 3.2rem); margin-top: 0.75rem;">Book an appointment</h1>
+      <hr class="rule">
+      <p class="lede" style="max-width: 38rem; margin: 1.5rem auto 0; color: var(--cream-70);">Tell us what you're dreaming up and who you'd like to work with. Your artist will reach out to talk it through. Haven't heard back? Call the shop at <a href="tel:+12098391265">(209)&nbsp;839-1265</a>.</p>
+    </div>
+
+    <section class="section">
+      <!-- Form backend: create a free form endpoint (e.g. Formspree) and put its URL
+           in the action below. Artist routing happens server-side — no artist emails
+           belong in this file. -->
+      <form class="form-grid" action="https://formspree.io/f/REPLACE_ME" method="POST">
+        <div class="field full">
+          <label for="artist">Artist</label>
+          <select id="artist" name="artist" required>
+            <option value="" selected disabled>Choose an artist</option>
+            <option>Jon Highland</option>
+            <option>Kristal Elaine</option>
+            <option>Ric Cardenas</option>
+            <option>Jessica Orsua</option>
+            <option>Danny Juge</option>
+            <option>Ashley Hess</option>
+            <option>No preference</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="fname">First name</label>
+          <input id="fname" name="first_name" type="text" autocomplete="given-name" required>
+        </div>
+        <div class="field">
+          <label for="lname">Last name</label>
+          <input id="lname" name="last_name" type="text" autocomplete="family-name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+        <div class="field">
+          <label for="reason">What are we doing?</label>
+          <select id="reason" name="reason" required>
+            <option value="" selected disabled>Choose one</option>
+            <option>New tattoo</option>
+            <option>Complete an existing tattoo</option>
+            <option>Cover-up</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="placement">Where on your body?</label>
+          <select id="placement" name="placement" required>
+            <option value="" selected disabled>Choose a placement</option>
+            <option>Shoulder</option>
+            <option>Full sleeve</option>
+            <option>Bicep</option>
+            <option>Forearm</option>
+            <option>Hand(s)</option>
+            <option>Ribcage</option>
+            <option>Sternum</option>
+            <option>Stomach</option>
+            <option>Back</option>
+            <option>Hip</option>
+            <option>Full leg</option>
+            <option>Thigh</option>
+            <option>Calf</option>
+            <option>Shin</option>
+            <option>Foot/feet</option>
+            <option>Other (explain below)</option>
+          </select>
+        </div>
+        <div class="field full">
+          <label for="description">Tell us about your tattoo</label>
+          <textarea id="description" name="description" required placeholder="Size, style, colors, reference ideas — the more detail the better."></textarea>
+        </div>
+        <div class="full check">
+          <input id="adult" name="over_18" type="checkbox" required>
+          <label for="adult">I verify that I am over the age of 18</label>
+        </div>
+        <div class="full">
+          <button class="btn" type="submit">Send Request</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="section">
+      <div class="section__head reveal">
+        <p class="kicker">Before You Come In</p>
+        <h2>House rules</h2>
+        <hr class="rule">
+      </div>
+      <ul class="notice-list reveal">
+        <li>Must be 18 or older to get tattooed — government-issued ID required.</li>
+        <li>Booking questions? Contact your artist directly (see the <a href="artists.html">Artists page</a>).</li>
+        <li>No food or drinks in the studio.</li>
+        <li>Friends and family hang out in the lobby during your appointment.</li>
+        <li>Be kind to other clients and artists, and silence your phone.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer__inner">
+      <div>
+        <h3>Visit</h3>
+        <p><a href="https://maps.google.com/?q=12+Monkeys+Tattoos,+911+N+Central+Ave,+Tracy,+CA+95376">911 N. Central Ave<br>Tracy, CA 95376</a></p>
+        <p><a href="tel:+12098391265">(209) 839-1265</a></p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <ul>
+          <li>Tue&ndash;Sat: 10am &ndash; 6pm</li>
+          <li>Sun &amp; Mon: Closed</li>
+          <li>Walk-ins welcome</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Follow</h3>
+        <ul>
+          <li><a href="https://www.instagram.com/12monkeystattoos/">Instagram</a></li>
+          <li><a href="https://www.yelp.com/biz/12-monkeys-tattoos-tracy">Yelp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer__bottom">
+      <span>&copy; 2026 12 Monkeys Tattoos &middot; Est. 1999</span>
+      <span>Must be 18+ with valid ID</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
